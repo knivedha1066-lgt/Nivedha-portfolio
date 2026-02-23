@@ -3,157 +3,180 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nivedha K | UI Developer</title>
+<title>Nivedha K | UI Designer</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 
 <style>
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter',sans-serif;
 }
 
 body{
-    background: linear-gradient(135deg,#1e3c72,#2a5298);
-    color:white;
+background: linear-gradient(135deg,#ff6ec4,#7873f5,#4ade80);
+background-size:400% 400%;
+animation:gradientMove 12s ease infinite;
+color:#111;
 }
 
-header{
-    text-align:center;
-    padding:80px 20px;
+@keyframes gradientMove{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
 }
 
-header h1{
-    font-size:3rem;
-    font-weight:700;
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:25px 10%;
+color:white;
 }
 
-header p{
-    font-size:1.2rem;
-    margin:15px 0;
-    opacity:0.9;
+nav h2{
+font-weight:800;
 }
 
-.btn{
-    display:inline-block;
-    margin-top:20px;
-    padding:12px 25px;
-    background:white;
-    color:#2a5298;
-    border-radius:30px;
-    text-decoration:none;
-    font-weight:600;
-    transition:0.3s;
+nav ul{
+display:flex;
+gap:25px;
+list-style:none;
 }
 
-.btn:hover{
-    background:#f1f1f1;
+nav a{
+color:white;
+text-decoration:none;
+font-weight:500;
 }
 
-section{
-    padding:60px 20px;
-    max-width:900px;
-    margin:auto;
+.hero{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:80px 10%;
+color:white;
 }
 
-h2{
-    text-align:center;
-    margin-bottom:40px;
-    font-size:2rem;
+.hero-text h1{
+font-size:3.5rem;
+font-weight:800;
 }
 
-.card{
-    background:rgba(255,255,255,0.1);
-    backdrop-filter:blur(10px);
-    padding:25px;
-    border-radius:15px;
-    margin-bottom:20px;
-    transition:0.3s;
+.hero-text p{
+margin-top:20px;
+font-size:1.2rem;
+max-width:500px;
 }
 
-.card:hover{
-    transform:translateY(-5px);
+.hero img{
+width:300px;
+border-radius:50%;
+border:6px solid white;
+box-shadow:0 10px 40px rgba(0,0,0,0.3);
 }
 
-ul{
-    list-style:none;
+.section{
+padding:80px 10%;
+background:white;
+border-radius:30px 30px 0 0;
+margin-top:60px;
 }
 
-li{
-    margin:10px 0;
+.section h2{
+font-size:2.2rem;
+margin-bottom:30px;
+}
+
+.skills{
+display:flex;
+flex-wrap:wrap;
+gap:15px;
+}
+
+.skill{
+background:#f3f4f6;
+padding:10px 20px;
+border-radius:30px;
+font-weight:500;
+transition:0.3s;
+}
+
+.skill:hover{
+background:#111;
+color:white;
+}
+
+.project-card{
+background:#f9fafb;
+padding:25px;
+border-radius:20px;
+margin-bottom:20px;
+transition:0.3s;
+}
+
+.project-card:hover{
+transform:translateY(-5px);
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
 }
 
 footer{
-    text-align:center;
-    padding:20px;
-    background:rgba(0,0,0,0.3);
+text-align:center;
+padding:30px;
+background:#111;
+color:white;
 }
 </style>
-
 </head>
+
 <body>
 
-<header>
-    <h1>Nivedha K</h1>
-    <p>UI & Frontend Developer</p>
-    <a href="#contact" class="btn">Contact Me</a>
-</header>
+<nav>
+<h2>Nivedha.</h2>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Projects</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</nav>
 
-<section>
-    <h2>About Me</h2>
-    <div class="card">
-        Passionate Computer Science student focused on building responsive,
-        visually appealing, and user-friendly web interfaces.
-        Currently exploring advanced UI design and frontend development.
-    </div>
-</section>
+<div class="hero">
+<div class="hero-text">
+<h1>UI / Frontend Developer</h1>
+<p>Creating visually stunning and user-friendly web experiences with modern UI design and clean frontend development.</p>
+</div>
+<img src="https://i.pravatar.cc/300" alt="Profile">
+</div>
 
-<section>
-    <h2>Technical Skills</h2>
-    <div class="card">
-        <ul>
-            <li>HTML, CSS, JavaScript</li>
-            <li>React</li>
-            <li>Bootstrap</li>
-            <li>Node.js</li>
-            <li>MySQL</li>
-            <li>Git (Basic)</li>
-        </ul>
-    </div>
-</section>
+<div class="section">
+<h2>About Me</h2>
+<p>Computer Science student passionate about UI design, frontend development, and building responsive digital experiences.</p>
 
-<section>
-    <h2>Projects</h2>
-    <div class="card">
-        <h3>Music Web App (JioSaavn Replica)</h3>
-        <p>Responsive full-stack music streaming application with playlist,
-        search, and media controls.</p>
-    </div>
-</section>
+<h2 style="margin-top:50px;">Skills</h2>
+<div class="skills">
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">React</div>
+<div class="skill">Bootstrap</div>
+<div class="skill">Node.js</div>
+<div class="skill">MySQL</div>
+<div class="skill">Git</div>
+</div>
 
-<section>
-    <h2>Internship</h2>
-    <div class="card">
-        <h3>Web Technology Intern – Test Yantra</h3>
-        <p>Built responsive UI pages, improved frontend validation,
-        and assisted in real-time projects.</p>
-    </div>
-</section>
+<h2 style="margin-top:50px;">Projects</h2>
+<div class="project-card">
+<h3>Music Web Application</h3>
+<p>Responsive music streaming web app with playlist and search functionality.</p>
+</div>
 
-<section id="contact">
-    <h2>Contact</h2>
-    <div class="card">
-        <p>Email: knivedha1066@gmail.com</p>
-        <p>LinkedIn: 
-        <a href="https://www.linkedin.com/in/nivedha-kumar-395bba297/" target="_blank" style="color:white;">
-        View Profile</a></p>
-    </div>
-</section>
+</div>
 
 <footer>
-    © 2026 Nivedha K | UI & Frontend Developer
+© 2026 Nivedha K | UI & Frontend Developer
 </footer>
 
 </body>
